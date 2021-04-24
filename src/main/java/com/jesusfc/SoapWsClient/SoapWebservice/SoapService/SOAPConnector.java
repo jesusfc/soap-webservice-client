@@ -1,4 +1,4 @@
-package com.jesusfc.SoapWsClient;
+package com.jesusfc.SoapWsClient.SoapWebservice.SoapService;
 
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 

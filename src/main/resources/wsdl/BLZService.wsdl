@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/"
                   xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"
                   xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://thomas-bayer.com/blz/"

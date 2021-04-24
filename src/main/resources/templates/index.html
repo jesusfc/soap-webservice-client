@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>WebServices Test</title>
+</head>
+<body>
+<h1>Bank Data</h1>
+<table>
+    <tr>
+        <th>bezeichnung</th>
+        <th>bic</th>
+        <th>ort</th>
+        <th>plz</th>
+    </tr>
+
+    <tr th:each="bankDetails : ${bankDetails}">
+        <td th:text="${bankDetails.bezeichnung}"></td>
+        <td th:text="${bankDetails.bic}"></td>
+        <td th:text="${bankDetails.ort}"></td>
+        <td th:text="${bankDetails.plz}"></td>
+    </tr>
+
+</table>
+</body>
+</html>
