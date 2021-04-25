@@ -26,8 +26,7 @@ public class BLZServiceImpl implements BLZService {
     }
 
     @Override
-    public BankDetails getBankInformation() {
-        String valueBlz = "12070000";
+    public BankDetails getBankInformation(String valueBlz) {
         GetBankType getBankTypeRequest = new GetBankType();
         getBankTypeRequest.setBlz(valueBlz);
         JAXBElement<GetBankResponseType> response = (JAXBElement<GetBankResponseType>) soapConnector.callWebService(uriWebService, getBankTypeRequest);

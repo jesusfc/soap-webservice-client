@@ -19,7 +19,8 @@ public class MainController {
 
     @RequestMapping(value = {"/","", "index.html"}, method = RequestMethod.GET)
     public String goToHomeView(Model model) {
-        model.addAttribute("bankDetails", blzService.getBankInformation());
+        String valueBlz = "12070000";
+        model.addAttribute("bankDetails", blzService.getBankInformation(valueBlz));
         return "index";
     }
 }

@@ -7,6 +7,7 @@ import lombok.Data;
  */
 public @Data
 class BankDetails {
+    private String valueBlz;
     private String bezeichnung;
     private String bic;
     private String ort;

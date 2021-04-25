@@ -7,20 +7,10 @@
 <body>
 <h1>Bank Data</h1>
 <table>
-    <tr>
-        <th>bezeichnung</th>
-        <th>bic</th>
-        <th>ort</th>
-        <th>plz</th>
-    </tr>
-
-    <tr th:each="bankDetails : ${bankDetails}">
-        <td th:text="${bankDetails.bezeichnung}"></td>
-        <td th:text="${bankDetails.bic}"></td>
-        <td th:text="${bankDetails.ort}"></td>
-        <td th:text="${bankDetails.plz}"></td>
-    </tr>
-
+    <tr><td>bezeichnung:</td><td th:text="${bankDetails.bezeichnung}"></td></tr>
+    <tr><td>bic:</td><td th:text="${bankDetails.bic}"></td></tr>
+    <tr><td>ort:</td><td th:text="${bankDetails.ort}"></td></tr>
+    <tr><td>plz:</td><td th:text="${bankDetails.plz}"></td></tr>
 </table>
 </body>
 </html>
